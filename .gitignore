@@ -169,3 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.DS_Store
+.python-version
+*.pth
+/Archived
+/Original
+A4_Do_you_AGREE.pdf
+Pretrained-BERT.ipynb
+Calc.ipynb
