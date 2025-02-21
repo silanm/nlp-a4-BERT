@@ -25,7 +25,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 * Dataset: `yahoo_answers_topics`
    * It's large, diverse, and covers multiple topics, making it perfect for sentence-level understanding.
    * Train set: `140,000` out of `1,400,000`
-   * Used two columns: `best_answer` for text, and `topic` for labels (10 classes)
+   * Used columns: `best_answer` for text, and `topic` for labels (10 classes)
 
    > 💡 **Credit**: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
 
@@ -43,7 +43,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 * Datasets: `SNLI` and `MNLI`
     * Both are gold standards for NLI tasks, perfect for fine-tuning.
     * Train set: `100,000`, Validation set: `10,000`, Test set: `10,000`
-    * Used three columns: `premise`, `hypothesis`, and `label`
+    * Used columns: `premise`, `hypothesis`, and `label`
 
    > 💡 **Credit**: [Stanford NLP on Hugging Face](https://huggingface.co/datasets/stanfordnlp/snli) & [NYU Machine Learning for Language on Hugging Face](https://huggingface.co/datasets/nyu-mll/glue)
 
