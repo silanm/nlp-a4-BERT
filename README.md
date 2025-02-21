@@ -27,7 +27,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
    * Train set: `140,000` out of `1,400,000`
    * Used two columns: `best_answer` for text, and `topic` for labels (10 classes)
 
-   > **Credit**: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
+   > 💡 **Credit**: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
 
 * Parameters:
    * Max sequence length: `2000`; handle long samples
@@ -45,7 +45,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
     * Train set: `100,000`, Validation set: `10,000`, Test set: `10,000`
     * Used three columns: `premise`, `hypothesis`, and `label`
 
-   > **Credit**: [Stanford NLP on Hugging Face](https://huggingface.co/datasets/stanfordnlp/snli) & [NYU Machine Learning for Language on Hugging Face](https://huggingface.co/datasets/nyu-mll/glue)
+   > 💡 **Credit**: [Stanford NLP on Hugging Face](https://huggingface.co/datasets/stanfordnlp/snli) & [NYU Machine Learning for Language on Hugging Face](https://huggingface.co/datasets/nyu-mll/glue)
 
 * Parameters:
    * Max sequence length: `128`
@@ -89,6 +89,6 @@ Original sentence: **The cat is sleeping on the tree**
 | The tree is tall and green | 0.6552 |
 
 
-# 💡 Why Cosine Similarity from 0 to 1 (Not -1)?
+# ❓ Why Cosine Similarity from 0 to 1 (Not -1)?
 
 In real-world sentence embeddings, negative values are rare because the embeddings represent semantic spaces. Most vectors align positively, making the range from 0 (no similarity) to 1 (identical meaning) more practical and interpretable.
