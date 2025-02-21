@@ -30,9 +30,9 @@ Create a custom-trained sentence transformer model to predict Natural Language I
    > **Credit**: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
 
 * Parameters:
-   *  Max padding length: `2000`; handle long samples
-   *  Batch size: `2`; limited memory on GPU
-   *  Number of epochs: `1000`
+   * Max sequence length: `2000`; handle long samples
+   * Batch size: `2`; limited memory on GPU
+   * Number of epochs: `1000`
 * Training loss: `121.65` ⇒ `2.86`   
 * Training time: `30m 55s`
 
@@ -43,11 +43,16 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 * Datasets: `SNLI` and `MNLI`
     * Both are gold standards for NLI tasks, perfect for fine-tuning.
     * Train set: `100,000`, Validation set: `10,000`, Test set: `10,000`
+    * Used three columns: `premise`, `hypothesis`, and `label`
 
    > **Credit**: [Stanford NLP on Hugging Face](https://huggingface.co/datasets/stanfordnlp/snli) & [NYU Machine Learning for Language on Hugging Face](https://huggingface.co/datasets/nyu-mll/glue)
 
-* Training loss: ___
-* Training time: ___
+* Parameters:
+   * Max sequence length: `128`
+   * Batch size: `32`
+   * Number of epochs: `5`
+* Training loss: `0` ⇒ `0`
+* Training time: `0`
 
 * Classification Report:
 
