@@ -12,6 +12,9 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 
 1. **Pre-train**: Train a sentence transformer using yahoo_answers_topics
 2. **Fine-tune**: Use SNLI and MNLI datasets with saved pre-trained weights
+
+   > **Credit**: Pre-training and fine-tuning codes are provided by **Chaklam Silpasuwanchai** and **Todsavad Tangtortan** as part of the Natural Language Processing course at the Asian Institute of Technology.
+
 3. **Evaluate**: Generate a classification report
 4. **Inference**: Find the cosine similarity between two sentences
 5. **Interface**: Build a Streamlit app for user interaction
@@ -20,23 +23,29 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 ## 📦 Pre-training
 
 * Dataset: `yahoo_answers_topics`
-   * Credit: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
    * It's large, diverse, and covers multiple topics, making it perfect for sentence-level understanding.
-   * Train set: `140k` out of `1.4m`
+   * Train set: `140,000` out of `1,400,000`
    * Used two columns: `best_answer` for text, and `topic` for labels (10 classes)
+
+   > **Credit**: [Community Datasets on Hugging Face](https://huggingface.co/datasets/community-datasets/yahoo_answers_topics)
+
 * Parameters:
    *  Max padding length: `2000`; handle long samples
    *  Batch size: `2`; limited memory on GPU
    *  Number of epochs: `1000`
-* Training time: ___
+* Training loss: `121.65` ⇒ `2.86`   
+* Training time: `30m 55s`
+
 
 
 ## 🎛️ Fine-tuning
 
 * Datasets: `SNLI` and `MNLI`
     * Both are gold standards for NLI tasks, perfect for fine-tuning.
-    * Train set: `100k`, Validation set: `10k`, Test set: `10k`
+    * Train set: `100,000`, Validation set: `10,000`, Test set: `10,000`
+* Training loss: ___
 * Training time: ___
+
 * Classification Report:
 
    ```
