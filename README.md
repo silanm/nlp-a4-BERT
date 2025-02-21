@@ -43,6 +43,9 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 * Datasets: `SNLI` and `MNLI`
     * Both are gold standards for NLI tasks, perfect for fine-tuning.
     * Train set: `100,000`, Validation set: `10,000`, Test set: `10,000`
+
+   > **Credit**: [Stanford NLP on Hugging Face](https://huggingface.co/datasets/stanfordnlp/snli) & [NYU Machine Learning for Language on Hugging Face](https://huggingface.co/datasets/nyu-mll/glue)
+
 * Training loss: ___
 * Training time: ___
 
