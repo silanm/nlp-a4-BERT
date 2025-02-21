@@ -74,7 +74,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 
 Original sentence: **The cat is sleeping on the tree**
 
-| Deviated Sentences | Similarity Score ⬇️ |
+| Sentence Variations | Similarity Score ⬇️ |
 | :----------------- | :----------------------------: |
 | The cat is sleeping on the tree | 1.0000 |
 | The cat is lounging in the tree | 0.9569 |
