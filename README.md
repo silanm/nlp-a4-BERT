@@ -2,11 +2,11 @@
 
 ## 🎯 Objective
 
-Create a custom-trained sentence transformer model to predict Natural Language Inference (NLI).
+Create a custom-trained sentence transformer model to predict Natural Language Inference (NLI)
 
 
 ## 🚀 Demo
-
+![Demo](images/demo.png)
 
 ## 📝 Steps
 
