@@ -33,7 +33,7 @@ Create a custom-trained sentence transformer model to predict Natural Language I
    * Max sequence length: `2000`; handle long samples
    * Batch size: `2`; limited memory on GPU
    * Number of epochs: `1000`
-* Training loss: `121.65` ⇒ `2.86`   
+* Training loss: `2.86`   
 * Training time: `30m 55s`
 
 
@@ -51,22 +51,24 @@ Create a custom-trained sentence transformer model to predict Natural Language I
    * Max sequence length: `128`
    * Batch size: `32`
    * Number of epochs: `5`
-* Training loss: `0` ⇒ `0`
-* Training time: `0`
+* Training loss: `1.16`
+* Training time: `1h 7m 38s`
 
 * Classification Report:
 
    ```
                   precision    recall  f1-score   support
-   
-      entailment       0.34      0.35      0.35      3429
-         neutral       0.32      0.49      0.39      3191
-   contradiction       0.33      0.15      0.21      3380
-   
-        accuracy                           0.33     10000
-       macro avg       0.33      0.33      0.31     10000
-    weighted avg       0.33      0.33      0.31     10000
+
+      entailment       0.42      0.02      0.05      3486
+         neutral       0.33      0.75      0.46      3199
+   contradiction       0.33      0.25      0.28      3315
+
+      accuracy                             0.33     10000
+      macro avg        0.36      0.34      0.26     10000
+   weighted avg        0.36      0.33      0.26     10000
    ```
+
+
 
 ## Sample Sentence Pairs:
 
