@@ -53,7 +53,23 @@ Create a custom-trained sentence transformer model to predict Natural Language I
 
 ## Sample Sentence Pairs:
 
+Original sentence: **The cat is sleeping on the tree**
+
+| Deviated Sentences | Similarity Score ⬇️ |
+| :----------------- | :----------------------------: |
+| The cat is sleeping on the tree | 1.0000 |
+| The cat is lounging in the tree | 0.9569 |
+| The cat is napping in the tree | 0.9448 |
+| The cat sleeps peacefully on the tree | 0.9395 |
+| The cat is climbing the tree | 0.9273 |
+| The cat is playing with the ball | 0.8724 |
+| A cat is resting on the tree branch | 0.8675 |
+| A dog is barking near the tree | 0.8417 |
+| A feline is dozing atop the tree | 0.8002 |
+| Birds are flying around the tree | 0.7289 |
+| The tree is tall and green | 0.6552 |
+
 
 # 💡 Why Cosine Similarity from 0 to 1 (Not -1)?
->
-> In real-world sentence embeddings, negative values are rare because the embeddings represent semantic spaces. Most vectors align positively, making the range from 0 (no similarity) to 1 (identical meaning) more practical and interpretable.
+
+In real-world sentence embeddings, negative values are rare because the embeddings represent semantic spaces. Most vectors align positively, making the range from 0 (no similarity) to 1 (identical meaning) more practical and interpretable.
