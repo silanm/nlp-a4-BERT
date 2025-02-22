@@ -68,6 +68,14 @@ Create a custom-trained sentence transformer model to predict Natural Language I
    weighted avg        0.36      0.33      0.26     10000
    ```
 
+   * Insights:
+      * Good at finding entailment and neutral pairs, but not perfectly
+      * Struggles with Contradictions – it often misses them
+      * Overall Accuracy: 36%
+   * Ways to Improve:
+      * Fine-tuning with more balanced datasets
+      * Adjusting the loss function to penalize misclassification of contradictions
+      * Increasing training epochs
 
 
 ## Sample Sentence Pairs:
